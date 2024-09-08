@@ -1,0 +1,40 @@
+00:45:18.256 [main] INFO  weatherapp.model.Model - Refreshing weather data
+00:45:18.691 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+00:45:18.859 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/81.229.116.129/json
+00:45:19.684 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+00:45:19.692 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+00:45:19.697 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-07
+00:45:19.710 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+00:45:19.857 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 81.229.116.129
+Country: SE
+Region: Stockholm
+City: Stockholm
+ISP: AS3301 Telia Company AB
+Latitude: 59.3294
+Longitude: 18.0687
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+00:45:22.426 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled
+00:45:24.902 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+00:45:34.090 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+00:45:34.803 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled
+01:30:39.980 [main] INFO  weatherapp.model.Model - Refreshing weather data
+01:30:40.443 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+01:30:40.613 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/81.229.116.129/json
+01:30:42.643 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+01:30:42.651 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+01:30:42.656 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-07
+01:30:42.669 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+01:30:42.867 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 81.229.116.129
+Country: SE
+Region: Stockholm
+City: Stockholm
+ISP: AS3301 Telia Company AB
+Latitude: 59.3294
+Longitude: 18.0687
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+01:30:47.598 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+01:30:48.325 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled
+01:30:49.174 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+01:30:49.713 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled

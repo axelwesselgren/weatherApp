@@ -1,0 +1,30 @@
+= Weather App
+
+Weather App is a custom Java Swing application using SMHI API to display a 10 day weather forecast based on the given location (IP).
+
+It uses ipify.org API and ipinfo.io in order to first get the public IP of the user and then the GEO location (lat, lon) based of the given IP. 
+
+The latitude and longitud is then used in the SMHI API URL to retrieve a 10 day weather forecast based on the given GEO location.
+
+== Features
+
+* Modern design.
+* Dark mode/Light mode.
+* SMHI API usage.
+* 10 Day weather forecast.
+* With or without precision.
+* Metric or Imperial units.
+
+== URLs
+
+The application uses three different URLs in order to retrieve and return information of and to the user.
+
+* **SMHI**: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/{longitud}/lat/{latitude}/data.json
+
+* **IPify** https://api.ipify.org?format=json
+
+* **ipinfo.io** https://ipinfo.io/{IP}/json
+
+---
+
+© Axel Lönnby Wesselgren (https://github.com/axelwesselgren)

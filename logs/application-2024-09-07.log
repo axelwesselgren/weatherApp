@@ -1,0 +1,790 @@
+10:38:18.760 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:38:18.777 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:38:23.789 [Thread-0] INFO  weatherapp.model.Model - Refreshing weather data
+10:39:57.310 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:39:57.326 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:41:37.253 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:41:37.275 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:41:42.289 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:41:42.302 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:41:58.406 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:41:58.410 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:42:03.422 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:42:03.428 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:42:19.539 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:42:19.539 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:42:24.551 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.UnknownHostException: api.ipify.org
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:42:24.562 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:42:29.855 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+10:42:30.040 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+10:42:30.040 [Thread-0] INFO  weatherapp.model.Model - Refreshing weather data
+10:42:30.977 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:42:30.993 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+10:42:31.006 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+10:42:31.014 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+10:42:31.262 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:44:28.954 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:44:28.959 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:44:33.965 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:44:33.973 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:44:38.986 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:44:38.994 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:44:44.004 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:84) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:124) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:44:44.004 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:08.736 [main] INFO  weatherapp.model.Model - Refreshing weather data
+10:45:08.872 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:83) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:123) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:45:08.884 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:14.180 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+10:45:14.416 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+10:45:15.418 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:45:15.418 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+10:45:15.439 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+10:45:15.453 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+10:45:15.656 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:45:24.720 [SwingWorker-pool-2-thread-1] INFO  weatherapp.model.Model - Refreshing weather data
+10:45:24.720 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:83) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:123) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:45:24.723 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:29.729 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:83) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:123) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:45:29.740 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:34.742 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:83) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:123) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:45:34.756 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:39.777 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:83) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:123) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:45:39.792 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:44.803 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+java.net.SocketException: Permission denied: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:589) ~[?:?]
+	at java.base/sun.nio.ch.Net.connect(Net.java:578) ~[?:?]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:583) ~[?:?]
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327) ~[?:?]
+	at java.base/java.net.Socket.connect(Socket.java:752) ~[?:?]
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304) ~[?:?]
+	at java.base/sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:181) ~[?:?]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:183) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[?:?]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1243) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1129) ~[?:?]
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1691) ~[?:?]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1615) ~[?:?]
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:223) ~[?:?]
+	at java.base/java.net.URL.openStream(URL.java:1325) ~[?:?]
+	at weatherapp.model.json.JSONReader.readJsonFromURL(JSONReader.java:20) ~[classes/:?]
+	at weatherapp.model.ip.IPGrabber.grabIpAdress(IPGrabber.java:22) ~[classes/:?]
+	at weatherapp.model.Model.grabIP(Model.java:83) ~[classes/:?]
+	at weatherapp.model.Model.run(Model.java:123) ~[classes/:?]
+	at java.base/java.lang.Thread.run(Thread.java:1570) [?:?]
+10:45:44.803 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:45:49.969 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+10:45:50.137 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+10:45:50.889 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:45:50.889 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+10:45:50.889 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+10:45:50.899 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+10:45:51.092 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:57:05.034 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+10:57:05.232 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+10:57:06.295 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:57:06.307 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+10:57:06.314 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+10:57:06.328 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+10:57:06.588 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+10:57:40.020 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:57:40.028 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:57:45.030 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:57:45.030 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:57:50.044 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:57:50.044 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:57:55.057 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:57:55.057 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:58:00.068 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:58:00.068 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:58:05.070 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:58:05.071 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:58:08.936 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:58:08.936 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:58:13.953 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:58:13.953 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:59:31.417 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:59:31.417 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+10:59:36.424 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+10:59:36.424 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:32:05.780 [main] INFO  weatherapp.model.Model - Refreshing weather data
+13:32:17.031 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:32:17.031 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:32:22.037 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:32:22.037 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:32:27.043 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:32:27.043 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:32:32.050 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:32:32.050 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:32:37.455 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:32:37.757 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:32:38.970 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:32:38.984 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:32:38.998 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:32:39.027 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:32:39.318 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:34:48.015 [main] INFO  weatherapp.model.Model - Refreshing weather data
+13:34:48.525 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:34:48.824 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:34:50.008 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:34:50.008 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:34:50.028 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:34:50.045 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:34:50.287 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:36:21.910 [main] INFO  weatherapp.model.Model - Refreshing weather data
+13:36:22.439 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:36:22.642 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:36:23.845 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:36:23.859 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:36:23.881 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:36:23.901 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:36:24.179 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:36:41.767 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+13:36:43.553 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+13:36:44.360 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+13:36:45.250 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+13:36:46.307 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled
+13:36:52.999 [SwingWorker-pool-2-thread-1] INFO  weatherapp.model.Model - Refreshing weather data
+13:36:53.167 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:36:53.452 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:36:54.264 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:36:54.269 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:36:54.270 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:36:54.274 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:36:54.488 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:37:07.036 [SwingWorker-pool-2-thread-2] INFO  weatherapp.model.Model - Refreshing weather data
+13:37:07.036 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:07.036 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:12.041 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:12.041 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:17.048 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:17.048 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:22.057 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:22.057 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:27.062 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:27.062 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:32.067 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:32.070 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:37.075 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:37.075 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:42.079 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:42.079 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:47.086 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:37:47.086 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:37:52.254 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:37:52.436 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:37:53.320 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:37:53.320 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:37:53.320 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:37:53.334 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:37:53.504 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:38:39.504 [main] INFO  weatherapp.model.Model - Refreshing weather data
+13:38:39.991 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:38:40.245 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:38:41.436 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:38:41.452 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:38:41.468 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:38:41.491 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:38:41.764 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:39:10.795 [main] INFO  weatherapp.model.Model - Refreshing weather data
+13:39:11.292 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:39:11.614 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:39:12.918 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:39:12.920 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:39:12.940 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:39:12.968 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:39:13.221 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:39:20.574 [AWT-EventQueue-0] INFO  weatherapp.model.Model - Refreshing weather data
+13:39:20.574 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:39:20.574 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:39:25.588 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:39:25.588 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:39:30.601 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:39:30.601 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:39:35.607 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:39:35.607 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:39:40.618 [Thread-0] ERROR weatherapp.model.Model - Failed to grab IP
+13:39:40.618 [Thread-0] INFO  weatherapp.model.Model - Retrying in 5 seconds
+13:39:45.783 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+13:39:45.967 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/158.255.217.9/json
+13:39:46.785 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+13:39:46.785 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+13:39:46.785 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-02
+13:39:46.798 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+13:39:47.040 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 158.255.217.9
+Country: SE
+Region: Stockholm
+City: Nacka
+ISP: AS12552 GlobalConnect AB
+Latitude: 59.3105
+Longitude: 18.1637
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.1637/lat/59.3105/data.json
+23:10:59.870 [main] INFO  weatherapp.model.Model - Refreshing weather data
+23:11:00.264 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+23:11:00.448 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/81.229.116.129/json
+23:11:02.017 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+23:11:02.025 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+23:11:02.029 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-07
+23:11:02.042 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+23:11:02.213 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 81.229.116.129
+Country: SE
+Region: Stockholm
+City: Stockholm
+ISP: AS3301 Telia Company AB
+Latitude: 59.3294
+Longitude: 18.0687
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+23:11:03.959 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled
+23:11:04.876 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+23:11:06.688 [AWT-EventQueue-0] INFO  weatherapp.model.Model - Refreshing weather data
+23:11:06.853 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://api.ipify.org?format=json
+23:11:07.014 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://ipinfo.io/81.229.116.129/json
+23:11:07.609 [Thread-0] INFO  weatherapp.model.json.JSONReader - Connection Established: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+23:11:07.613 [Thread-0] INFO  weatherapp.model.weather.SMHI - JSON Timestamps read
+23:11:07.614 [Thread-0] INFO  weatherapp.model.weather.SMHI - API Date: 2024-09-07
+23:11:07.617 [Thread-0] INFO  weatherapp.model.weather.SMHI - Weather Data read
+23:11:07.737 [Thread-0] INFO  weatherapp.model.Model - 
+IP Adress: 81.229.116.129
+Country: SE
+Region: Stockholm
+City: Stockholm
+ISP: AS3301 Telia Company AB
+Latitude: 59.3294
+Longitude: 18.0687
+https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/18.0687/lat/59.3294/data.json
+23:11:08.944 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Degree toggled
+23:11:09.719 [AWT-EventQueue-0] INFO  weatherapp.ui.app.ControlPanel - Precision toggled
