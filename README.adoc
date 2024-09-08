@@ -13,9 +13,9 @@ It retrieves the user's public IP address using the ipify.org API and determines
 2. Navigate into the project directory:
    `cd weatherApp`
 3. Use Maven to build and package the project:
-   `mvn clean install`
+   `mvn clean install package`
 4. Run the application:
-   `java -jar target/weatherApp.jar`
+   `java -jar target/weatherapp-1.0-jar-with-dependencies.jar`
 
 _Requirements:_
 
@@ -34,7 +34,7 @@ link:https://github.com/axelwesselgren/weatherApp/raw/main/WeatherApp.exe[Downlo
 * 10-day weather forecast
 * Optional precision
 * Metric or Imperial units
-* Lightweight - 451kb
+* Lightweight - 451kb JAR - 3.58mb EXE
 * Open-source
 
 == URLs
