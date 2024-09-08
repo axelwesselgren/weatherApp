@@ -20,7 +20,7 @@ To compile and run the Weather App from source, follow these steps:
 [source,bash]
 ----
 git clone https://github.com/axelwesselgren/weatherApp.git
-cd weather-app
+cd weatherApp
 ----
 
 ==== Compile the Project
