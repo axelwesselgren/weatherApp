@@ -1,29 +1,68 @@
 = Weather App
 
-Weather App is a custom Java Swing application using SMHI API to display a 10 day weather forecast based on the given location (IP).
+Weather App is a custom Java Swing application that uses the SMHI API to display a 10-day weather forecast based on the user's location (IP).
 
-It uses ipify.org API and ipinfo.io in order to first get the public IP of the user and then the GEO location (lat, lon) based of the given IP. 
+It retrieves the user's public IP address using the ipify.org API and determines the GEO location (latitude and longitude) with ipinfo.io. This GEO location is then used to query the SMHI API for the weather forecast.
 
-The latitude and longitud is then used in the SMHI API URL to retrieve a 10 day weather forecast based on the given GEO location.
+== Usage
+
+=== Compiling and Running from Source
+
+To compile and run the Weather App from source, follow these steps:
+
+==== Prerequisites
+
+* [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html).
+* [Apache Maven](https://maven.apache.org/download.cgi).
+
+==== Download the Source Code
+
+[source,bash]
+----
+git clone https://github.com/axelwesselgren/weather-app.git
+cd weather-app
+----
+
+==== Compile the Project
+
+[source,bash]
+----
+mvn compile
+----
+
+==== Package the Application
+
+[source,bash]
+----
+mvn package
+----
+
+This command will compile the code, run tests, and create a JAR file in the `target` directory.
+
+==== Run the Application
+
+Replace `file.jar` with the actual name of the JAR file.
+
+[source,bash]
+----
+java -jar target/file.jar
+----
 
 == Features
 
-* Modern design.
-* Dark mode/Light mode.
-* SMHI API usage.
-* 10 Day weather forecast.
-* With or without precision.
-* Metric or Imperial units.
+* 10-day weather forecast
+* Optional precision
+* Metric or Imperial units
+* Lightweight - 451kb
+* Open-source
 
 == URLs
 
-The application uses three different URLs in order to retrieve and return information of and to the user.
+The application interacts with the following APIs:
 
-* **SMHI**: https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/{longitud}/lat/{latitude}/data.json
-
-* **IPify** https://api.ipify.org?format=json
-
-* **ipinfo.io** https://ipinfo.io/{IP}/json
+* **SMHI:** Retrieve weather data from https://opendata-download-metfcst.smhi.se/api/category/pmp3g/version/2/geotype/point/lon/{longitude}/lat/{latitude}/data.json
+* **IPify:** Obtain public IP address from https://api.ipify.org?format=json
+* **ipinfo.io:** Get GEO location from https://ipinfo.io/{IP}/json
 
 ---
 
