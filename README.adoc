@@ -6,47 +6,9 @@ It retrieves the user's public IP address using the ipify.org API and determines
 
 == Usage
 
-=== Compiling and Running from Source
-
-To compile and run the Weather App from source, follow these steps:
-
-==== Prerequisites
-
-* [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html).
-* [Apache Maven](https://maven.apache.org/download.cgi).
-
-==== Download the Source Code
-
-[source,bash]
-----
-git clone https://github.com/axelwesselgren/weatherApp.git
-cd weatherApp
-----
-
-==== Compile the Project
-
-[source,bash]
-----
-mvn compile
-----
-
-==== Package the Application
-
-[source,bash]
-----
-mvn package
-----
-
-This command will compile the code, run tests, and create a JAR file in the `target` directory.
-
-==== Run the Application
-
-Replace `file.jar` with the actual name of the JAR file.
-
-[source,bash]
-----
-java -jar target/file.jar
-----
+* Compile it yourself 
+* or
+* Run the "WeatherApp.exe" if you're on Windows
 
 == Features
 
