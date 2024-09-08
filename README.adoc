@@ -6,9 +6,28 @@ It retrieves the user's public IP address using the ipify.org API and determines
 
 == Usage
 
-* Compile it yourself 
-* or
-* Run the "WeatherApp.exe" if you're on Windows
+=== Option 1: Compile it Yourself
+
+1. Clone the repository:
+   `git clone https://github.com/axelwesselgren/weatherApp.git`
+2. Navigate into the project directory:
+   `cd weatherApp`
+3. Use Maven to build and package the project:
+   `mvn clean install`
+4. Run the application:
+   `java -jar target/weatherApp.jar`
+
+_Requirements:_
+
+* Java JDK 8+
+
+* Maven
+
+=== Option 2: Run the Pre-built Executable (Windows)
+
+If you're on Windows, you can download and run the executable directly:
+
+link:https://github.com/axelwesselgren/weatherApp/raw/main/WeatherApp.exe[Download WeatherApp.exe]
 
 == Features
 
