@@ -8,6 +8,16 @@ It retrieves the user's public IP address using the ipify.org API and determines
 
 The app only works withing in certain coordinates since it's relying on SMHI's API. It works within the 4 points
 
+It works regardless of city in these countries.
+* Sweden
+* Norway
+* Finland
+* Dennmark
+* Estonia
+* Latvia
+* Lithuania
+
+
 image::SMHI.png[Map of SMHI allowed coordinates]
 
 == Usage
