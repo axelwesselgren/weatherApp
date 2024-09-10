@@ -4,6 +4,12 @@ Weather App is a custom Java Swing application that uses the SMHI API to display
 
 It retrieves the user's public IP address using the ipify.org API and determines the GEO location (latitude and longitude) with ipinfo.io. This GEO location is then used to query the SMHI API for the weather forecast.
 
+== Information
+
+The app only works withing in certain coordinates since it's relying on SMHI's API. It works within the 4 points
+
+image::SMHI.png[Map of SMHI allowed coordinates]
+
 == Usage
 
 === Option 1: Compile it Yourself
